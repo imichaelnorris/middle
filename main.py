@@ -1,4 +1,6 @@
 def middleEndian(n):
+    '''Returns the middle endian format of the number 'n' as an integer.'''
+    '''A Middle-Endian Bit-Ordered number is defined by concatenating the middle bit of a bit with an odd number of bits, the bit before the middle, then the bit after the middle, then the bit before the bit before the middle, then the bit after the bit after the middle, etc, until the whole number has been rearranged. With an even number of bits, there are "two" middle bits, so start with the leftmost middle bit, then attach the rightmost middle bit, then the bit before the leftmost middle bit, etc, until all of the bits have been added, where the leftmost middle bit of the original number is the leftmost bit of the new number and the rightmost bit of the original number is still the rightmost bit of the middle-endian bit-ordered number.'''
     a = bin(n)[2:]
     temp = ""
     spread = 0
