@@ -38,6 +38,6 @@ def middleEndian(n):
     return int(temp, 2)
 
 #print [(bin(middleEndian(i))[2:], bin(i)[2:]) for i in range(1, 23)]
-RANGE = 1000000
-x= filter((lambda x: middleEndian(x) == x), range(1, RANGE))
-print x
+#RANGE = 1000000
+#x= filter((lambda x: middleEndian(x) == x), range(1, RANGE))
+#print x
